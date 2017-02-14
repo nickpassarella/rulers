@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rulers/version'
+require 'rulerz/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rulers"
-  spec.version       = Rulers::VERSION
+  spec.name          = "rulerz"
+  spec.version       = Rulerz::VERSION
   spec.authors       = ["Nick Passarella"]
   spec.email         = ["nickpassarella@gmail.com"]
 
   spec.summary       = %q{A Rack-based Web Framework built along with Rebuilding Rails.}
-  spec.description   = %q{An exercise to learn more about Rails under the hood. Rulers is the Rails-like gem built in the Rebuilding Rails book.}
-  spec.homepage      = "https://github.com/nickpassarella/rulers"
+  spec.description   = %q{An exercise to learn more about Rails under the hood. Rulerz is my version of the Rails-like gem built in the Rebuilding Rails book.}
+  spec.homepage      = "https://github.com/nickpassarella/rulerz"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
+
+  spec.add_runtime_dependency "rack"
 end
